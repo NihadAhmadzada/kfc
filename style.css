@@ -1,0 +1,397 @@
+body {
+    margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+#top-navbar {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px ;
+    overflow: hidden;
+  
+
+}
+
+
+
+.nav-items{
+    margin-top: 30px;
+}
+.nav-items ul{
+    display: flex;
+}
+.nav-align-items-center li{
+    margin-left: 20px;
+}
+.nav-align-items-center a{
+    text-decoration: none;
+}
+.dil a{
+    color: black;
+    
+}
+.brand {
+    margin-left: -70px;
+}
+.stores a {
+    width: fit-content;
+    background-color: red;
+    padding: 14px 55px;
+    color: aliceblue;
+    font: normal 550 13px arial;
+    border-radius: 4px;
+}
+
+.view a {
+    background-color: red;
+    padding: 14px 45px;
+    color: aliceblue;
+    font: normal 550 13px arial;
+    border-radius: 4px;
+}
+
+.phone i {
+    color: black;
+    font-size: 25px;
+}
+
+.phone a {
+    color: black;
+    font: 550 17px normal;
+
+}
+
+.cards{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   justify-content: center;
+   gap: 30px;
+
+        /* margin-left: 40px;
+        margin-top: 40px; */
+    /* width: 1450px; */
+}
+.card img{
+    border: none;
+    width: 340px;
+    border-radius: 8px 8px 0 0;
+}
+.card h6{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+    border-radius: 8px ;
+    height: auto;
+    width: 342px;
+    box-shadow: 0 0 13px 0 rgba(22, 21, 21, 0.15);
+    padding-bottom: 0.75rem;
+}
+.card p{
+    text-align: center;
+    padding: 5px;
+    font: 500 16px arial;
+    width: 310px;
+    margin-left: 15px;
+}
+.main{
+    margin: 50px 0;
+    /* height: 100vh; */
+
+}
+
+.misal h3{
+    font: 550 22px arial;
+    text-align: center;
+}
+.misal hr{
+    width: 360px;
+    margin-left: 580px;
+    border: 2px solid #ee0909;
+}
+.card button{
+    margin-top: 25px;
+    width: 300px;
+    margin-left: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e4002b;
+    padding: 6px 17px;
+    color: azure;
+    font-weight: 600;
+}
+.button{
+    margin-left: 580px;
+    margin-top: 60px;
+    background-color: #e4002b;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 90px;
+    border: 1px solid #e4002b;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: #e92b4dee;
+}
+.bg {
+    background-image: url("./img/history.jpeg");
+    background-attachment: fixed;
+    height: 80vh;
+}
+.text{
+    text-align: center;
+    justify-content: center;
+    padding-top: 250px;
+}
+.text h3{
+    font: 550 30px arial;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.bg a{
+    background-color: #e4002b;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e4002b;
+    padding: 16px 55px;
+    font: 550 14px arial;
+    text-decoration: none;
+}
+.bg a:hover{
+    background-color: #e51138d7;
+}
+.context{
+    padding-top: 50px;
+    width: 1410px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 60px;
+    height: 90vh;  
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+  }
+  .center h2{
+    font: 550 22px arial;
+    color: #fff;
+  }
+  .center p{
+    font: 400 17px arial;
+    color: #fff;
+    padding-top: 19px;
+    padding-bottom: 15px;
+  }
+  .center a{
+    margin-top: 50px;
+    background-color: #e4002b;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 110px;
+    font: 550 14px arial;
+  }
+  .center button:hover{
+    background-color: #df153ac3;
+  }
+  .rate{
+    text-align: center;
+    position: relative;
+  }
+  .rate img{
+    border-radius: 5px;
+    filter: brightness(70%);
+  }
+.ends img{
+    height: 70vh;
+    filter: brightness(50%);
+    width: 100%;
+}
+.ends{
+    position: relative;
+}
+.images{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+.enjoy{
+    position: absolute;
+    top: 30%;
+    width: 1100px;
+    margin-left: 660px;
+}
+.tele img{
+    width: 550px;
+    height: 66.5vh;
+    filter: brightness(100%);
+}
+.enjoy .wolt img{
+    height: 40vh;
+    width: 80px;
+    margin-top: -90px;
+    filter: brightness(90%);
+}
+.enjoy h2{
+    font: 550 40px arial;
+    color: #fff;
+}
+.enjoy p{
+    font: 500 18px arial;
+    color: #fff;
+    margin-left: 6px;
+    margin-top: 20px;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 27vh;
+}
+.right{
+    display: flex;
+}
+.logo img{
+    width: 105px;
+}
+.foot a{
+    text-decoration: none;
+    font: arial 500 11px arial;
+    color: black;
+}
+.metn h5{
+    font: 550 16px arial;
+    color: #e4002b;
+    opacity: 2;
+}
+.metn ul{
+    margin-left: -30px;
+}
+.metn{
+    margin-left: 60px;
+}
+.logos img{
+    margin-top: 10px;
+    width: 27px;
+    margin-left: 5px;
+}
+.telefon{
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.telefon i{
+    color: #e4002b;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.telefon a{
+    font-size: 14px;
+    font-weight: 510;
+}
+.footer{
+    background-color: #e4002b;
+    height: 20vh;
+}
+.all{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.sollar{
+    display: flex;
+    margin-left: -150px;
+}
+.sag{
+    margin-right: -110px;
+}
+.orta{
+    margin-left: -150px;
+}
+.all a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer img{
+    width: 300px;
+    height: 9.6vh;
+    margin-left: 590px;
+    
+}
+.sag p{
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+.sag p:hover{
+    background-color: #fff;
+}
+.sag a:hover{
+    color: #e4002b;
+}
+.foot , .footer ul{
+    list-style: none;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+     .nav-items{
+     display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }

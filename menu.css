@@ -1,0 +1,36 @@
+/* Sidebar üslubu */
+.sidebar {
+    height: 100%; /* Hündürlüyü tam edir */
+    width: 250px; /* Sidebar genişliyi */
+    position: fixed; /* Ekranın sol tərəfinə fiks edilir */
+    background-color: #ffffff00; /* Qaranlıq fon */
+    padding-top: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none; /* Siyahı nöqtələrini aradan qaldırır */
+  }
+  
+  .sidebar li {
+    padding: 8px 16px; /* İçəriyə boşluq əlavə edir */
+  }
+  
+  .sidebar a {
+    color: rgb(8, 8, 8); /* Yazının rəngi */
+    text-decoration: none; /* Alt xəttini silir */
+    display: block; /* Tam genişlik */
+  }
+  
+  .sidebar a:hover {
+    background-color: #575757; /* Hover zamanı arxa fonun rəngini dəyişir */
+  }
+  .sidebar i{
+    color: aliceblue;
+  }
+  .burger , .wrap , .bucket , .juicy , .boxcombo , .french , .sauce , .cold , .hot , .dessert{
+    display: flex;
+  }
+  .side-right{
+    width: 1000px;
+  }
+  

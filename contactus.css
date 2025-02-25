@@ -1,0 +1,122 @@
+.xerite{
+    filter: brightness(50%);
+    margin-top: 60px;
+}
+.ad h2{
+    font: 550 22px arial;
+    text-align: center;
+    margin-top: 70px;
+}
+.contactus{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.bas{
+   display: flex;
+   justify-content: space-between;
+}
+.row{
+    width: 400px;
+}
+.form textarea {
+    width: 620px;
+    border-radius: 5px;
+    border: 1px solid rgb(169, 164, 164);
+    height: 30vh;
+
+}
+.form label{
+    font: 550 15px arial;
+    margin-bottom: 13px;
+    margin-top: 22px;
+}
+.form select{
+    width: 300px;
+    border-radius: 5px;
+    height: 5.5vh;
+    border: 1px solid rgb(169, 164, 164);
+}
+#options{
+    font: 500 14px arial;
+    padding-left: 5px;
+    color: rgb(48, 46, 46);
+}
+.body{
+    width: 660px;
+    margin-left: 40px;
+}
+.form input{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(169, 164, 164);
+    height: 5.5vh;
+}
+.son{
+    margin-left: 20px;
+}
+.contact {
+    box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.17);
+    border-radius: 5px;
+    height: 95vh;
+}
+.header{
+    padding-bottom: 12px;
+    padding-top: 22px;
+    background-color: rgb(237, 20, 63);
+    border-radius: 5px 5px 0 0;
+}
+.header h5{
+    text-align: center;
+    font: 550 15px arial;
+    color: azure;
+}
+.form button{
+    width: 300px;
+    margin-left: 140px;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(237, 20, 63);
+    color: azure;
+    border: none;
+    font: 550 15px arial;
+}
+.red{
+    display: flex;
+}
+.melumat{
+    border-radius: 6px;
+    width: 600px;
+    box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.17);
+}
+.setir{
+    border-bottom: 1px solid rgba(146, 142, 142, 0.756);
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.setir h5{
+    font: 550 17px arial;
+    padding-bottom: 7px;
+}
+.melumat i, .setir h5, .red h3{
+    color: rgb(226, 8, 44);
+    opacity: 2;
+}
+.melumat i{
+    font-size: 13px;
+    padding-right: 6px;
+}
+.melumat p{
+    font: 500 14px arial;
+    color: rgb(90, 86, 86);
+}
+.setir .sekiz{
+    color: rgb(222, 14, 59);
+    font-weight: 550;
+}
+.red h3{
+    font: 550 16px arial;
+    padding-left: 10px;
+}

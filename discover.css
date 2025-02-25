@@ -1,0 +1,75 @@
+.food .text{
+    padding-top: 0;
+}
+.food{
+    margin-top: 70px;
+    margin-left: 230px;
+}
+.food h3{
+    font: 550 21px arial;
+    text-align: center;
+    margin-right: 130px;
+    padding-bottom: 60px;
+
+}
+.kard{
+    display: flex;
+    width: 1100px;
+    border-radius: 7px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 60px;
+}
+.kub{
+    display: flex;
+    width: 1100px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+.kard .text{
+   text-align: left; 
+   margin-left: 60px;
+   margin-top: 100px;
+   width: 600px;
+
+}
+.izah{
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.izah h6{
+    font: 550 23px arial;
+    padding-bottom: 15px;
+}
+.izah p{
+    font: 500 15px arial;
+    color: rgb(78, 76, 76);
+    line-height: 1.5;
+}
+.kard .text h6{
+    font: 550 23px arial;
+    padding-bottom: 15px;
+}
+.kard .text p{
+    font: 500 15px arial;
+    color: rgb(78, 76, 76);
+    line-height: 1.5;
+}
+.kub img{
+    height: 50vh;
+    width: 360px;
+
+}
+.kard img{
+    height: 50vh;
+    width: 360px;
+    border-radius: 7px 0 0 7px;
+}
+.izah{
+    text-align: left; 
+    width: 600px;
+}
+hr{
+    color: rgb(96, 94, 94);
+    margin-bottom: 30px;
+}

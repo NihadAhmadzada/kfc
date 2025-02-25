@@ -1,0 +1,85 @@
+.xerite {
+    margin-top: 30px;
+    filter: brightness(70%);
+}
+
+.nav-align-items-center a {
+    text-decoration: none;
+}
+.dropdown-content {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.937);
+    min-width: 300px; 
+    margin-left: 47px;
+    padding: 7px 17px;
+    border-radius: 5px;
+    color: rgb(236, 10, 10);
+    font-weight: 550;
+    text-align: center;
+    margin-top: 3px;
+    border: 2px solid;
+
+}
+.dropdown .dropbtn{
+    margin-left: 45px;
+}
+.dropdown-content .font-weight-bold {
+    font-weight: bold;
+}
+.ust h5{
+    font: 550 18px arial;
+    color: rgb(236, 14, 14);
+    margin-top: 29px;
+    margin-left: 25px;
+}
+.card{
+    border-radius: 5px;
+    width: 400px;
+}
+.ust{
+    display: flex;
+    justify-content: space-between;
+}
+.ust button{
+    width: 80px;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.konum{
+    margin-top: 30px;
+}
+.konum p{
+    font: 500 14px arial;
+    color: rgb(75, 72, 72);
+}
+.konum i{
+    font-size: 15px;
+    margin-right: 14px;
+    color: rgb(236, 10, 10);
+}
+.konum .phone{
+    margin-left: -90px;
+}
+.hour{
+    display: flex;
+    justify-content: space-between;
+}
+.hour .ev i{
+    margin-left: -100px;
+}
+.hour .ev{
+    color: rgb(80, 79, 79);
+    font: 500 14px arial;
+}
+.hour i{
+    padding-right: 9px;
+    color: rgb(236, 10, 10);
+}
+.hour p{
+    margin-right: -60px;
+    color: rgb(236, 10, 10);
+    font: 550 15px arial;
+}
