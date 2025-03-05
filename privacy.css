@@ -1,0 +1,45 @@
+#top-navbar {
+    background-color: white;
+  
+    transition: background-color 0.3s ease-out;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 1%;
+  }
+.privacy{
+    margin-top: 180px;
+    border-radius: 7px;
+    width: 1180px;
+    margin-left: 160px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+}
+.privacy h5{
+    font: 550 15px arial;
+}
+.privacy_text{
+    padding: 30px 40px;
+}
+.privacy_text ol{
+    font: 400 14px arial;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.privacy_text li{
+    margin-top: 30px;
+    font: 400 14px arial;
+}
+.privacy_text p{
+    font:450 15px arial;
+    padding-top: 40px;
+    margin-left: 20px;
+}
+.privacy_text ul{
+    margin-bottom: 40px;
+}
+hr{
+    margin-top: 50px;
+    color: rgba(101, 98, 98, 0.619);
+}
+.privacy_text a{
+    color: red;
+    text-decoration: none;
+}

@@ -1,7 +1,7 @@
 .start{
     margin-left: 75px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 170px;
     width: 1370px;
 }
 .start h1{
@@ -17,4 +17,15 @@
     font: 450 15px arial;
     color: rgb(71, 69, 69);
     line-height: 1.5;
+}
+#top-navbar {
+    background-color: white;
+  
+    transition: background-color 0.3s ease-out;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 1%;
+  }
+  hr{
+    margin-top: 50px;
+    color: rgba(101, 98, 98, 0.619);
 }

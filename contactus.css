@@ -1,11 +1,18 @@
 .xerite{
     filter: brightness(50%);
-    margin-top: 60px;
+    margin-top: 50px;
 }
+#top-navbar {
+    background-color: white;
+  
+    transition: background-color 0.3s ease-out;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 1%;
+  }
 .ad h2{
     font: 550 22px arial;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 160px;
 }
 .contactus{
     display: flex;
@@ -120,3 +127,14 @@
     font: 550 16px arial;
     padding-left: 10px;
 }
+hr{
+    margin-top: 50px;
+    color: rgba(101, 98, 98, 0.619);
+}
+
+@media only screen and (max-width: 1200px) {
+    .contactus {
+    display: flex;
+    flex-direction: column;
+    }
+  }

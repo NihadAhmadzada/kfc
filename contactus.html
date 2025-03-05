@@ -15,157 +15,225 @@
 </head>
 
 <body>
-    <nav id="top-navbar">
+    <nav id="top-navbar" class="fixed">
         <div class="container">
             <div class="content">
                 <a class="brand" href="kfc.az.html" alt="logo"><img
-                        src="https://devkfcwebsites.fimble.io/admin/files/4109.svg" alt="image" width="90px">
+                        src="https://devkfcwebsites.fimble.io/admin/files/4109.svg" alt="image" width="90px" />
                 </a>
             </div>
             <div class="nav-items">
                 <ul type="none" class="nav-align-items-center">
                     <li class="stores"><a href="stores.html">STORES</a></li>
-                    <li class="view"><a href="/menu.html">VIEW MENU</a></li>
-                    <li class="phone"><a href="/tel:888"><i class="fa-solid fa-phone"></i> <span>*8888</span></a></li>
-                    <li class="dil"><a href="#">EN<i class="fa-solid fa-caret-down"></i></a> </li>
+                    <li class="view"><a href="menu.html">VIEW MENU</a></li>
+                    <li class="phone">
+                        <a href="/tel:888"><i class="fa-solid fa-phone"></i> <span>*8888</span></a>
+                    </li>
+                    <li class="dil">
+                        <a href="#">EN<i class="fa-solid fa-caret-down"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="ad">
-            <h2>CONTACT US</h2>
-        </div>
-        <div class="map">
-            <iframe class="xerite"
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24308.696347319226!2d49.96730548793022!3d40.39584419463192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skfc!5e0!3m2!1saz!2saz!4v1739534411598!5m2!1saz!2saz"
-                width="1400" height="360" style="border:5; margin-left: 70px;" allowfullscreen="" loading="fast"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contactus">
-            <div class="contact">
-                <div class="header">
-                    <h5>CONTACT US</h5>
-                </div>
-                <div class="body">
-                    <form id="contactForm" name="contactForm">
-                        <div class="row">
-                            <div class="bas">
-                                <div class="ilk">
-                                    <div class="form">
-                                        <label for="contactName">Name</label>
-                                        <input type="text" name="contactName" data-empty="The field is required">
-                                    </div>
-                                    <div class="form">
-                                        <label for="contactPhone">Contact Phone</label>
-                                        <input type="tel" name="contactPhone" data-empty="The field is required">
-                                    </div>
+    </nav>
+    <div class="ad">
+        <h2>CONTACT US</h2>
+    </div>
+    <div class="map">
+        <iframe class="xerite"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24308.696347319226!2d49.96730548793022!3d40.39584419463192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skfc!5e0!3m2!1saz!2saz!4v1739534411598!5m2!1saz!2saz"
+            width="92%" height="360" style="border:5; margin-left: 70px;" allowfullscreen="" loading="fast"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contactus">
+        <div class="contact">
+            <div class="header">
+                <h5>CONTACT US</h5>
+            </div>
+            <div class="body">
+                <form id="contactForm" name="contactForm">
+                    <div class="row">
+                        <div class="bas">
+                            <div class="ilk">
+                                <div class="form">
+                                    <label for="contactName">Name</label>
+                                    <input type="text" name="contactName" data-empty="The field is required">
                                 </div>
-                                <div class="son">
-                                    <div class="form">
-                                        <label for="contactEmail">E-mail</label>
-                                        <input type="email" name="contactEmail" data-empty="The field is required">
-                                    </div>
-                                    <div class="form">
-                                        <label for="contactStore">Store</label>
-                                        <select name="contactStore" id="options">
-                                            <option value="KFC Ganclik Mall">KFC Ganclik Mall</option>
-                                            <option value="KFC Amburan Mall">KFC Amburan Mall</option>
-                                            <option value="KFC Ataturk">KFC Ataturk</option>
-                                            <option value="KFC Bakikhanov">KFC Bakikhanov</option>
-                                            <option value="KFC Railway Station">KFC Railway Station</option>
-                                            <option value="KFC Daniz Mall">KFC Daniz Mall</option>
-                                        </select>
-                                    </div>
+                                <div class="form">
+                                    <label for="contactPhone">Contact Phone</label>
+                                    <input type="tel" name="contactPhone" data-empty="The field is required">
                                 </div>
                             </div>
-                            <div class="form">
-                                <label for="contactMessage">Message</label>
-                                <textarea name="contactMessage" id="contactMessage"
-                                    data-empty="The field is required"></textarea>
-                            </div>
-                            <div class="form">
-                                <button>Send</button>
+                            <div class="son">
+                                <div class="form">
+                                    <label for="contactEmail">E-mail</label>
+                                    <input type="email" name="contactEmail" data-empty="The field is required">
+                                </div>
+                                <div class="form">
+                                    <label for="contactStore">Store</label>
+                                    <select name="contactStore" id="options">
+                                        <option value="KFC Ganclik Mall">KFC Ganclik Mall</option>
+                                        <option value="KFC Amburan Mall">KFC Amburan Mall</option>
+                                        <option value="KFC Ataturk">KFC Ataturk</option>
+                                        <option value="KFC Bakikhanov">KFC Bakikhanov</option>
+                                        <option value="KFC Railway Station">KFC Railway Station</option>
+                                        <option value="KFC Daniz Mall">KFC Daniz Mall</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                        <div class="form">
+                            <label for="contactMessage">Message</label>
+                            <textarea name="contactMessage" id="contactMessage"
+                                data-empty="The field is required"></textarea>
+                        </div>
+                        <div class="form">
+                            <button>Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="melumat">
+            <div class="setir">
+                <h5>KFC Ganclik Mall</h5>
+                <p><i class="fa-solid fa-location-dot"></i> Fatali Khan Khoyski avenue, Ganclik Mall</p>
+                <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
+                <div class="red">
+                    <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+                    <h3>08:00 - 22:00</h3>
                 </div>
             </div>
-            <div class="melumat">
-                <div class="setir">
-                    <h5>KFC Ganclik Mall</h5>
-                    <p><i class="fa-solid fa-location-dot"></i> Fatali Khan Khoyski avenue, Ganclik Mall</p>
-                    <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
-                    <div class="red">
-                        <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+            <div class="setir">
+                <h5>KFC 28 Mall</h5>
+                <p><i class="fa-solid fa-location-dot"></i> «28mall» Azadliq avenue, 22 </p>
+                <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
+                <div class="red">
+                    <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+                    <h3>08:00 - 22:00</h3>
+                </div>
+            </div>
+            <div class="setir">
+                <h5>KFC Amburan Mall</h5>
+                <p><i class="fa-solid fa-location-dot"></i> Zaqulba avenue. 337, Amburan Mall</p>
+                <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
+                <div class="red">
+                    <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+                    <h3>08:00 - 22:00</h3>
+                </div>
+            </div>
+            <div class="setir">
+                <h5>KFC Ataturk</h5>
+                <p><i class="fa-solid fa-location-dot"></i> Ataturk, 47</p>
+                <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
+                <div class="red">
+                    <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+                    <div class="vaxt">
                         <h3>08:00 - 22:00</h3>
+                        <h3>23:00 - 00:00</h3>
                     </div>
                 </div>
-                <div class="setir">
-                    <h5>KFC 28 Mall</h5>
-                    <p><i class="fa-solid fa-location-dot"></i> «28mall» Azadliq avenue, 22 </p>
-                    <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
-                    <div class="red">
-                        <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+            </div>
+            <div class="setir">
+                <h5>KFC Bakikhanov</h5>
+                <p><i class="fa-solid fa-location-dot"></i> Samedbek Mekhmandarov, 139</p>
+                <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
+                <div class="red">
+                    <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+                    <div class="vaxt">
                         <h3>08:00 - 22:00</h3>
+                        <h3>23:00 - 00:00</h3>
                     </div>
                 </div>
-                <div class="setir">
-                    <h5>KFC Amburan Mall</h5>
-                    <p><i class="fa-solid fa-location-dot"></i> Zaqulba avenue. 337, Amburan Mall</p>
-                    <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
-                    <div class="red">
-                        <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+            </div>
+            <div class="setir">
+                <h5>KFC Railway Station</h5>
+                <p><i class="fa-solid fa-location-dot"></i> Fikret Amirov, 24</p>
+                <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
+                <div class="red">
+                    <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+                    <div class="vaxt">
                         <h3>08:00 - 22:00</h3>
+                        <h3>23:00 - 00:00</h3>
                     </div>
                 </div>
-                <div class="setir">
-                    <h5>KFC Ataturk</h5>
-                    <p><i class="fa-solid fa-location-dot"></i> Ataturk, 47</p>
-                    <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
-                    <div class="red">
-                        <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
-                        <div class="vaxt">
-                            <h3>08:00 - 22:00</h3>
-                            <h3>23:00 - 00:00</h3>
-                        </div>
-                    </div>
+            </div>
+            <div class="setir">
+                <h5>KFC Daniz Mall</h5>
+                <p><i class="fa-solid fa-location-dot"></i> Makhamad Khadi street, 68</p>
+                <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
+                <div class="red">
+                    <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
+                    <h3>08:00 - 22:00</h3>
                 </div>
-                <div class="setir">
-                    <h5>KFC Bakikhanov</h5>
-                    <p><i class="fa-solid fa-location-dot"></i> Samedbek Mekhmandarov, 139</p>
-                    <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
-                    <div class="red">
-                        <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
-                        <div class="vaxt">
-                            <h3>08:00 - 22:00</h3>
-                            <h3>23:00 - 00:00</h3>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="foot">
+        <div class="left">
+            <ul class="tels">
+                <li>
+                    <a class="logo" href="kfc.az.html"><img src="https://devkfcwebsites.fimble.io/admin/files/4109.svg"
+                            alt="image" width="90px" /></a>
+                </li>
+                <li class="telefon">
+                    <a href="/tel:888"><i class="fa-solid fa-phone"></i>*8888</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="metn">
+                <h5>Information</h5>
+
+                <div class="information_list">
+                    <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="discover.html">The 11 Ingredients!</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                    </ul>
                 </div>
-                <div class="setir">
-                    <h5>KFC Railway Station</h5>
-                    <p><i class="fa-solid fa-location-dot"></i> Fikret Amirov, 24</p>
-                    <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
-                    <div class="red">
-                        <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
-                        <div class="vaxt">
-                            <h3>08:00 - 22:00</h3>
-                            <h3>23:00 - 00:00</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="setir">
-                    <h5>KFC Daniz Mall</h5>
-                    <p><i class="fa-solid fa-location-dot"></i> Makhamad Khadi street, 68</p>
-                    <p class="sekiz"><i class="fa-solid fa-phone"></i> *8888</p>
-                    <div class="red">
-                        <p><i class="fa-solid fa-store"></i> Pickup Hours:</p>
-                        <h3>08:00 - 22:00</h3>
-                    </div>
-                </div>
+            </div>
+            <div class="metn">
+                <h5>Need Help?</h5>
+                <ul>
+                    <li><a href="contactus.html">Contact US</a></li>
+                    <li><a href="career.html">Career in KFC</a></li>
+                </ul>
+            </div>
+            <div class="metn">
+                <h5>Follow us</h5>
+                <a class="logos"
+                    href="https://www.bing.com/ck/a?!&&p=cbe6fe174c7876ddf6ce9d2f7056afcb7286d8d0ad3dd6d35a13b91ba74bb921JmltdHM9MTczOTQ5MTIwMA&ptn=3&ver=2&hsh=4&fclid=2594dfb4-c36a-6662-052a-cc1ec2b767d9&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"
+                    target="_blank">
+                    <img src="./img/faceb.svg" alt="facebook" />
+                </a>
+                <a class="logos"
+                    href="https://www.bing.com/ck/a?!&&p=6ecc7b891c969a895786073b1c19efce2a145a00a28602bd82a90abc84a7d264JmltdHM9MTczOTQ5MTIwMA&ptn=3&ver=2&hsh=4&fclid=2594dfb4-c36a-6662-052a-cc1ec2b767d9&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"
+                    target="_blank">
+                    <img src="./img/instag.svg" alt="instagram" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_text">
+            <div class="policy_text">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="term.html">Terms & Conditions</a>
+            </div>
+            <div class="copyright_text">
+                <p>© Copyright 2025 KFC AZ All Rights Reserved.</p>
+            </div>
+            <div class="fimble_btn">
+                <a href="https://www.fimble.io/" target="_blank"> Powered by fimble</a>
             </div>
         </div>
 
-    </nav>
+        <div class="footer_logo">
+            <img src="img/kublar.png" alt="kublar">
+        </div>
+    </footer>
 </body>
 
 </html>

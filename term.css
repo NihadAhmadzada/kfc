@@ -1,0 +1,36 @@
+#top-navbar {
+    background-color: white;
+  
+    transition: background-color 0.3s ease-out;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 1%;
+  }
+  .term{
+    margin-top: 180px;
+    border-radius: 7px;
+    width: 1180px;
+    margin-left: 160px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+  }
+  .term_text{
+    padding: 30px 40px;
+  }
+  .term_text p{
+    font: 400 14.5px arial;
+    line-height: 1.5;
+  }
+  .term_text h3{
+    font: 550 18px arial;
+  }
+  .term_text ul{
+    padding: 15px 20px;
+  }
+  .term_text li{
+    margin-bottom: 25px;
+    font: 400 14px arial;
+    letter-spacing: 0.3px;
+  }
+  hr{
+    margin-top: 50px;
+    color: rgba(101, 98, 98, 0.619);
+}

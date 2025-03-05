@@ -1,7 +1,14 @@
 .xerite {
-    margin-top: 30px;
+    margin-top: 160px;
     filter: brightness(70%);
 }
+#top-navbar {
+    background-color: white;
+  
+    transition: background-color 0.3s ease-out;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 1%;
+  }
 
 .nav-align-items-center a {
     text-decoration: none;

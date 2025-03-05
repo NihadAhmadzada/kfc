@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+    
+}
+
+.rate_card {
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    width: 830px;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+.rate_us {
+    height: 150vh;
+    width: 850px;
+    margin: 0 330px;
+}
+
+.rate_body {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.rate_sol {
+    width: 450px;
+}
+
+.rate_sol h6 {
+    font: 550 15px arial;
+    line-height: 1.5;
+}
+
+.rate_sol input {
+    width: 90px;
+    margin-left: 15px;
+}
+
+.rate_sol img {
+    margin-right: 6px;
+}
+
+.rate-secim {
+    margin-top: 20px;
+}
+
+.rate_sol p {
+    font: 500 13px arial;
+    letter-spacing: 0.3px;
+}
+
+.rate_sol span {
+    margin-left: 100px;
+}
+
+.rate_sol button {
+    background-color: #e4002b;
+    border: none;
+    border-radius: 5px;
+    font: 550 17px arial;
+    color: white;
+    padding: 7px 7px;
+    margin-top: 15px;
+}
+.rate_links li{
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+.rate_links {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.rate_footer{
+    background-color: #e4002b;
+    padding: 10px;
+    border-radius: 0 0 7px 7px;
+
+}
+.rate_footer_text {
+    justify-content: space-around;
+    display: flex;
+    color: white;
+}
+.rate_footer_text a{
+    color:white;
+}
+.smg {
+    list-style: none;
+    display: flex;
+}
+.smg li{
+    margin-left: 12px;
+}
+.smg a{
+    color: white;
+}

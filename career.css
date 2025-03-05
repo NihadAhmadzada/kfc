@@ -1,4 +1,12 @@
+#top-navbar {
+    background-color: white;
+  
+    transition: background-color 0.3s ease-out;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 1%;
+  }
 .career img{
+    margin-top: 130px;
     width: 1420px;
     margin-bottom: 70px;
 }
@@ -77,4 +85,97 @@
 
 .slide img{
     box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+}
+hr{
+    margin-top: 50px;
+    color: rgba(101, 98, 98, 0.619);
+}
+#job-apply{
+    width: 1390px;
+    margin-left: 65px;
+    margin-top: 50px;
+    border-radius: 7px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+}
+.card-title{
+    background-color: #e4002b;
+    padding: 20px;
+    text-align: center;
+    font: 550 18px arial;
+    color: white;
+    border-radius: 7px 7px 0 0;
+    border: none;
+}
+.rows{
+    display: flex;
+    justify-content: space-between;
+}
+.form-groups{
+    display: flex;
+    height: 160px;
+}
+.form-group input{
+    border-radius: 5px;
+    padding: 5px;
+    width: 630px;
+    border: 1px solid rgba(151, 149, 149, 0.729);
+    margin-bottom: 20px;
+}
+.form-groups input{
+    width: 310px;
+    border-radius: 5px;
+    border: 1px solid rgba(151, 149, 149, 0.729);
+    padding: 5px;
+    
+}
+.form-groups .form-group{
+    margin-right: 10px;
+}
+.row{
+    width: 650px;
+}
+.card-body{
+    margin-left: 45px;
+    margin-top: 30px;
+    width: 1300px;
+}
+.row-body label{
+    font:550 14px arial;
+    margin-bottom: 6px;
+}
+#application_cv_key{
+    height: 5vh; 
+}
+.form-group textarea{
+    width: 630px;
+    border-radius: 5px;
+    border: 1px solid rgba(151, 149, 149, 0.729);
+    height: 130px;
+}
+.agree label{
+    font: 500 13.5px arial;
+    margin-left: 10px;
+}
+.agree{
+    display: flex;
+    margin-top: 15px;
+}
+.form-button {
+    text-align: center;
+    margin-top: 50px;
+}
+.form-button button{
+    width: 400px;
+    border: none;
+    background-color: #e4002b;
+    color: white;
+    border-radius: 5px;
+    padding: 17px;
+    font: 550 15px arial;
+    margin-bottom: 50px;
+}
+
+.cv_btn button{
+
 }
