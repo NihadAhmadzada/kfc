@@ -1,846 +1,995 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
 
-<body>
-    <nav id="top-navbar" class="fixed">
-        <div class="container">
-            <div class="content">
-                <a class="brand" href="kfc.az.html" alt="logo"><img
-                        src="https://devkfcwebsites.fimble.io/admin/files/4109.svg" alt="image" width="90px" />
-                </a>
-            </div>
-            <div class="nav-items">
-                <ul type="none" class="nav-align-items-center">
-                    <li class="stores"><a href="stores.html">STORES</a></li>
-                    <li class="view"><a href="menu.html">VIEW MENU</a></li>
-                    <li class="phone">
-                        <a href="/tel:888"><i class="fa-solid fa-phone"></i> <span>*8888</span></a>
-                    </li>
-                    <li class="dil">
-                        <a href="#">EN<i class="fa-solid fa-caret-down"></i></a>
-                    </li>
-                </ul>
-            </div>
+  <body>
+    <nav
+      id="top-navbar"
+      class="fixed w-full shadow-md transition-all duration-300"
+    >
+      <div class="container flex">
+        <div class="content">
+          <a class="brand" href="kfc.az.html" alt="logo">
+            <img
+              id="logo"
+              src="https://devkfcwebsites.fimble.io/admin/files/4109.svg"
+              alt="image"
+              class="transition-all duration-300"
+              width="90px"
+            />
+          </a>
         </div>
+        <div class="nav-items">
+          <ul type="none" class="flex space-x-6 items-center">
+            <li class="stores"><a href="stores.html">STORES</a></li>
+            <li class="view"><a href="menu.html">VIEW MENU</a></li>
+            <li class="phone">
+              <a href="/tel:888"
+                ><i class="fa-solid fa-phone"></i> <span>*8888</span></a
+              >
+            </li>
+            <li class="dil">
+              <a href="#">EN<i class="fa-solid fa-caret-down"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <div class="sidebar">
+    <div id="overlay">
+      <div class="sidebar">
         <ul>
-            <li><a id="side-burgers"  href="#burgers">Burgers</a></li>
-            <li><a id="side-wraps" href="#wraps">Wraps</a></li>
-            <li><a id="side-buckets" href="#buckets">Buckets</a></li>
-            <li><a id="side-JuicyChicken" href="#JuicyChicken">Juicy Chicken</a></li>
-            <li><a id="side-BoxCombo" href="#Box-Combo">Box & Combo</a></li>
-            <li><a id="side-FrenchFriesSnacks" href="#FrenchFries-Snacks">French Fries & Snacks</a></li>
-            <li><a id="side-Sauces" href="#Sauces">Sauces</a></li>
-            <li><a id="side-Colddrinks" href="#Colddrinks">Cold drinks</a></li>
-            <li><a id="side-HotDrinks" href="#HotDrinks">Hot Drinks</a></li>
-            <li><a id="side-Desserts" href="#Desserts">Desserts</a></li>
+          <li><a id="side-burgers" href="#burgers">Burgers</a></li>
+          <li><a id="side-wraps" href="#wraps">Wraps</a></li>
+          <li><a id="side-buckets" href="#buckets">Buckets</a></li>
+          <li>
+            <a id="side-JuicyChicken" href="#JuicyChicken">Juicy Chicken</a>
+          </li>
+          <li><a id="side-BoxCombo" href="#Box-Combo">Box & Combo</a></li>
+          <li>
+            <a id="side-FrenchFriesSnacks" href="#FrenchFries-Snacks"
+              >French Fries & Snacks</a
+            >
+          </li>
+          <li><a id="side-Sauces" href="#Sauces">Sauces</a></li>
+          <li><a id="side-Colddrinks" href="#Colddrinks">Cold drinks</a></li>
+          <li><a id="side-HotDrinks" href="#HotDrinks">Hot Drinks</a></li>
+          <li><a id="side-Desserts" href="#Desserts">Desserts</a></li>
         </ul>
-    </div>
-    <div class="side-right">
+      </div>
+      <div class="side-right">
         <div class="nov">
-            <div id="burgers" class="yemek">
-                <h5>Burgers</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="./img/burger1.jpg" alt="burger">
-                        <h4>CHEFBURGER ORIGINAL</h4>
-                        <p>Creamy sauce, chicken fillet in <br> unique breading, iceberg salad and tomatoes on wheat bun
-                            with
-                            black <br>and white seasam seeds</p>
-                        <button>4,90 ₼</button>
+          <div id="burgers" class="yemek">
+            <h5>Burgers</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="./img/burger1.jpg" alt="burger" />
+                <h4>CHEFBURGER ORIGINAL</h4>
+                <p>
+                  Creamy sauce, chicken fillet in <br />
+                  unique breading, iceberg salad and tomatoes on wheat bun with
+                  black <br />and white seasam seeds
+                </p>
+                <button>4,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/burger2.jpg" alt="burger" />
+                <h4>CHEFBURGER SPICY</h4>
+                <p>
+                  Hot chicken, fresh salad, onion, sauce Burger, crispy pickles
+                  and appetizing bun with black and white sesame seeds.
+                </p>
+                <button>4,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/burger3.jpg" alt="burger" />
+                <h4>CHEESEBURGER</h4>
+                <p>
+                  Mustar sauce, ketchup, 2 original strips, onion, cheddar
+                  cheese, cucumbers on a wheat bun with seasame seeds
+                </p>
+                <button>3,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/burger4.jpg" alt="burger" />
+                <h4>LONGER SPECIAL</h4>
+                <p>
+                  Wheat bun, juicy bites fillet in breading, pickles, onion,
+                  light mayonnaise and mustard sauce
+                </p>
+                <button>2,30 ₼</button>
+              </div>
+            </div>
+          </div>
+          <div id="wraps" class="yemek">
+            <h5>Wraps</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="./img/wrap1.jpg" alt="wrap" />
+                <h4>BOXMASTER ORIGINAL</h4>
+                <p>
+                  Juicy chicken fillet in crispy hot, crusty hash brown, piece
+                  of cheese, tomato chunks, lettuce and tender sauce in hot flat
+                  bread.
+                </p>
+                <button>6,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/wrap1.jpg" alt="wrap" />
+                <h4>BOXMASTER SPICY</h4>
+                <p>
+                  Juicy chicken fillet in crispy hot, crusty hash brown, piece
+                  of cheese, tomato chunks, lettuce and tender sauce in hot flat
+                  bread.
+                </p>
+                <button>6,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/wrap3.jpg" alt="wrap" />
+                <h4>TWISTER ORIGINAL</h4>
+                <p>
+                  Chicken fillet in unique breading, salad, tomatoes and tender
+                  sauce Chef in a wheat flatbread.
+                </p>
+                <button>5,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/wrap3.jpg" alt="wrap" />
+                <h4>TWISTER SPICY</h4>
+                <p>
+                  We wrapped chunks of soft chicken fillet in crispy hot coating
+                  with luscious lettuce, tomato pieces and tender sauce in wheat
+                  tortilla and toasted it.
+                </p>
+                <button>5,20 ₼</button>
+              </div>
 
-                    </div>
-                    <div class="card">
-                        <img src="./img/burger2.jpg" alt="burger">
-                        <h4>CHEFBURGER SPICY</h4>
-                        <p>Hot chicken, fresh salad, onion, sauce Burger, crispy pickles and appetizing bun with black
-                            and
-                            white sesame seeds.</p>
-                        <button>4,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/burger3.jpg" alt="burger">
-                        <h4>CHEESEBURGER</h4>
-                        <p>Mustar sauce, ketchup, 2 original strips, onion, cheddar cheese, cucumbers on a wheat bun
-                            with
-                            seasame seeds</p>
-                        <button>3,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/burger4.jpg" alt="burger">
-                        <h4>LONGER SPECIAL</h4>
-                        <p>Wheat bun, juicy bites fillet in breading, pickles, onion, light mayonnaise and mustard sauce
-                        </p>
-                        <button>2,30 ₼</button>
-                    </div>
-                </div>
+              <div class="card">
+                <img src="./img/wrap5.png" alt="wrap" />
+                <h4>TWISTER VEGIE</h4>
+                <p>
+                  Wrap with crispy hush brown, cheese, tomatoes, fresh Iceberg
+                  salad and special sauce
+                </p>
+                <button>5,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/wrap6.jpg" alt="wrap" />
+                <h4>I-TWISTER</h4>
+                <p>
+                  Juicy chicken with a tender cheese sauce in the new i-Twister.
+                </p>
+                <button>2,10 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/wrapson.jpg" alt="wrap" />
+                <h4>MEGA ROLL</h4>
+                <p>
+                  Mega big, hearty sandwich with 3 crispy strips, gentle sauce,
+                  pickles and fresh Iceberg salad
+                </p>
+                <button>7,90 ₼</button>
+              </div>
             </div>
-            <div id="wraps" class="yemek">
-                <h5>Wraps</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="./img/wrap1.jpg" alt="wrap">
-                        <h4>BOXMASTER ORIGINAL</h4>
-                        <p>Juicy chicken fillet in crispy hot, crusty hash brown, piece of cheese, tomato chunks,
-                            lettuce and tender sauce in hot flat bread.</p>
-                        <button>6,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/wrap1.jpg" alt="wrap">
-                        <h4>BOXMASTER SPICY</h4>
-                        <p>Juicy chicken fillet in crispy hot, crusty hash brown, piece of cheese, tomato chunks,
-                            lettuce and tender sauce in hot flat bread.</p>
-                        <button>6,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/wrap3.jpg" alt="wrap">
-                        <h4>TWISTER ORIGINAL</h4>
-                        <p>Chicken fillet in unique breading, salad, tomatoes and tender sauce Chef in a wheat
-                            flatbread.</p>
-                        <button>5,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/wrap3.jpg" alt="wrap">
-                        <h4>TWISTER SPICY</h4>
-                        <p>We wrapped chunks of soft chicken fillet in crispy hot coating with luscious lettuce, tomato
-                            pieces and tender sauce in wheat tortilla and toasted it.</p>
-                        <button>5,20 ₼</button>
-                    </div>
-
-                    <div class="card">
-                        <img src="./img/wrap5.png" alt="wrap">
-                        <h4>TWISTER VEGIE</h4>
-                        <p>Wrap with crispy hush brown, cheese, tomatoes, fresh Iceberg salad and special sauce</p>
-                        <button>5,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/wrap6.jpg" alt="wrap">
-                        <h4>I-TWISTER</h4>
-                        <p>Juicy chicken with a tender cheese sauce in the new i-Twister.</p>
-                        <button>2,10 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/wrapson.jpg" alt="wrap">
-                        <h4>MEGA ROLL</h4>
-                        <p>Mega big, hearty sandwich with 3 crispy strips, gentle sauce, pickles and fresh Iceberg
-                            salad
-                        </p>
-                        <button> 7,90 ₼</button>
-                    </div>
-
-
-                </div>
+          </div>
+          <div id="buckets" class="yemek">
+            <h5>Buckets</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="./img/bucket1-2.jpg" alt="bucket" />
+                <h4>BUCKET 999 ORIGINAL</h4>
+                <p>
+                  9 spicy wings, 9 original strips, 9 original drumsticks, 3
+                  small french fries
+                </p>
+                <button>37,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket1-2.jpg" alt="bucket" />
+                <h4>BUCKET 999 SPICY</h4>
+                <p>
+                  9 spicy wings, 9 spicy strips, 9 spicy drumsticks, 3 small
+                  french fries
+                </p>
+                <button>37,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket3-4-5.jpg" alt="bucket" />
+                <h4>BUCKET 15 DRUMSTICKS SPICY</h4>
+                <p>15 spicy drumsticks+1 medium french fries</p>
+                <button>37,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket3-4-5.jpg" alt="bucket" />
+                <h4>BUCKET 9 DRUMSTICKS ORIGINAL</h4>
+                <p>9 drumsticks+1 medium french fries</p>
+                <button>37,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket3-4-5.jpg" alt="bucket" />
+                <h4>BUCKET 9 DRUMSTICKS SPICY</h4>
+                <p>9 spicy drumsticks+1 medium french fries</p>
+                <button>17,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket6-7.jpg" alt="bucket" />
+                <h4>BUCKET 6 DRUMSTICKS ORIGINAL</h4>
+                <p>6 drumsticks+1 medium french fries</p>
+                <button>13,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket6-7.jpg" alt="bucket" />
+                <h4>BUCKET 6 DRUMSTICKS SPICY</h4>
+                <p>6 spicy drumsticks+1 medium french fries</p>
+                <button>13,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket8.jpg" alt="bucket" />
+                <h4>BUCKET L</h4>
+                <p>28 hot&spicy chicken wings+1 medium french fries</p>
+                <button>27,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket9.jpg" alt="bucket" />
+                <h4>BUCKET M</h4>
+                <p>20 hot&spicy chicken wings+1 medium french fries</p>
+                <button>21,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket10.jpg" alt="bucket" />
+                <h4>BUCKET S</h4>
+                <p>12 hot&spicy chicken wings+1 medium french fries</p>
+                <button>12,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket11-12.jpg" alt="bucket" />
+                <h4>BUCKET DUET ORIGINAL</h4>
+                <p>
+                  2 original drumsticks+4 hot&spicy chicken wings+4 original
+                  strips+1 medium french fries
+                </p>
+                <button>13,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket11-12.jpg" alt="bucket" />
+                <h4>BUCKET DUET SPICY</h4>
+                <p>
+                  2 spicy drumsticks+4 hot&spicy chicken wings+4 spicy strips+1
+                  medium french fries
+                </p>
+                <button>13,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucketsonuncu.jpg" alt="bucket" />
+                <h4>SANDERS BUCKET ORIGINAL</h4>
+                <p>
+                  2 original drumsticks+ hot&spicy chicken wings+ original
+                  strips
+                </p>
+                <button>9,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="./img/bucket11-12.jpg" alt="bucket" />
+                <h4>SANDERS BUCKET SPICY</h4>
+                <p>
+                  2 spicy drumsticks+ 2 hot&spicy chicken wings+2 spicy strips
+                </p>
+                <button>9,90 ₼</button>
+              </div>
             </div>
-            <div id="buckets" class="yemek">
-                <h5>Buckets</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="./img/bucket1-2.jpg" alt="bucket">
-                        <h4>BUCKET 999 ORIGINAL</h4>
-                        <p>9 spicy wings, 9 original strips, 9 original drumsticks, 3 small french fries</p>
-                        <button> 37,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket1-2.jpg" alt="bucket">
-                        <h4>BUCKET 999 SPICY</h4>
-                        <p>9 spicy wings, 9 spicy strips, 9 spicy drumsticks, 3 small french fries</p>
-                        <button> 37,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket3-4-5.jpg" alt="bucket">
-                        <h4>BUCKET 15 DRUMSTICKS SPICY</h4>
-                        <p>15 spicy drumsticks+1 medium french fries</p>
-                        <button> 37,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket3-4-5.jpg" alt="bucket">
-                        <h4>BUCKET 9 DRUMSTICKS ORIGINAL</h4>
-                        <p>9 drumsticks+1 medium french fries</p>
-                        <button> 37,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket3-4-5.jpg" alt="bucket">
-                        <h4>BUCKET 9 DRUMSTICKS SPICY</h4>
-                        <p>9 spicy drumsticks+1 medium french fries</p>
-                        <button> 17,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket6-7.jpg" alt="bucket">
-                        <h4>BUCKET 6 DRUMSTICKS ORIGINAL</h4>
-                        <p>6 drumsticks+1 medium french fries</p>
-                        <button> 13,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket6-7.jpg" alt="bucket">
-                        <h4>BUCKET 6 DRUMSTICKS SPICY</h4>
-                        <p>6 spicy drumsticks+1 medium french fries</p>
-                        <button> 13,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket8.jpg" alt="bucket">
-                        <h4>BUCKET L</h4>
-                        <p>28 hot&spicy chicken wings+1 medium french fries</p>
-                        <button> 27,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket9.jpg" alt="bucket">
-                        <h4>BUCKET M</h4>
-                        <p>20 hot&spicy chicken wings+1 medium french fries</p>
-                        <button> 21,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket10.jpg" alt="bucket">
-                        <h4>BUCKET S</h4>
-                        <p>12 hot&spicy chicken wings+1 medium french fries</p>
-                        <button> 12,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket11-12.jpg" alt="bucket">
-                        <h4>BUCKET DUET ORIGINAL</h4>
-                        <p>2 original drumsticks+4 hot&spicy chicken wings+4 original strips+1 medium french fries</p>
-                        <button> 13,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket11-12.jpg" alt="bucket">
-                        <h4>BUCKET DUET SPICY</h4>
-                        <p>2 spicy drumsticks+4 hot&spicy chicken wings+4 spicy strips+1 medium french fries</p>
-                        <button> 13,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucketsonuncu.jpg" alt="bucket">
-                        <h4> SANDERS BUCKET ORIGINAL</h4>
-                        <p>2 original drumsticks+ hot&spicy chicken wings+ original strips</p>
-                        <button> 9,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="./img/bucket11-12.jpg" alt="bucket">
-                        <h4>SANDERS BUCKET SPICY</h4>
-                        <p>2 spicy drumsticks+ 2 hot&spicy chicken wings+2 spicy strips</p>
-                        <button> 9,90 ₼</button>
-                    </div>
-                </div>
+          </div>
+          <div id="JuicyChicken" class="yemek">
+            <h5>Juicy Chicken</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="img/DRUM1-4.jpg" alt="chicken" />
+                <h4>1 DRUMSTICKS</h4>
+                <p>
+                  KFC Chicken Drumsticks in original recipe! fresh chicken
+                  hand-breaded and cooked according to Colonel Sanders’ secret
+                  recipe of “11 herbs and spices”.
+                </p>
+                <button>3,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM2-5.jpg" alt="chicken" />
+                <h4>2 DRUMSTICKS</h4>
+                <p>
+                  KFC Chicken Drumsticks in original recipe! fresh chicken
+                  hand-breaded and cooked according to Colonel Sanders’ secret
+                  recipe of “11 herbs and spices”.
+                </p>
+                <button>5,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM3-6.jpg" alt="chicken" />
+                <h4>3 DRUMSTICKS</h4>
+                <p>
+                  KFC Chicken Drumsticks in original recipe! fresh chicken
+                  hand-breaded and cooked according to Colonel Sanders’ secret
+                  recipe of “11 herbs and spices”.
+                </p>
+                <button>7,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM1-4.jpg" alt="chicken" />
+                <h4>1 DRUMSTICKS SPICY</h4>
+                <p>
+                  KFC Chicken Drumsticks in original recipe! fresh chicken
+                  hand-breaded and cooked according to Colonel Sanders’ secret
+                  recipe of “11 herbs and spices”.
+                </p>
+                <button>3,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM2-5.jpg" alt="chicken" />
+                <h4>2 DRUMSTICKS SPICY</h4>
+                <p>
+                  KFC Chicken Drumsticks in original recipe! fresh chicken
+                  hand-breaded and cooked according to Colonel Sanders’ secret
+                  recipe of “11 herbs and spices”.
+                </p>
+                <button>5,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM3-6.jpg" alt="chicken" />
+                <h4>3 DRUMSTICKS SPICY</h4>
+                <p>
+                  KFC Chicken Drumsticks in original recipe! fresh chicken
+                  hand-breaded and cooked according to Colonel Sanders’ secret
+                  recipe of “11 herbs and spices”.
+                </p>
+                <button>7,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM7-8.jpg" alt="chicken" />
+                <h4>3 SPICY WINGS</h4>
+                <p>
+                  KFC Chicken Drumsticks in original recipe! fresh chicken
+                  hand-breaded and cooked according to Colonel Sanders’ secret
+                  recipe of “11 herbs and spices”.
+                </p>
+                <button>3,80 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM7-8.jpg" alt="chicken" />
+                <h4>6 SPICY WINGS</h4>
+                <p>
+                  Our hot chicken wings in crispy coating with spices — the true
+                  fire! * Wings could be with one or two bones.
+                </p>
+                <button>6,80 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM9.jpg" alt="chicken" />
+                <h4>9 SPICY WINGS</h4>
+                <p>
+                  Our hot chicken wings in crispy coating with spices — the true
+                  fire! * Wings could be with one or two bones.
+                </p>
+                <button>9,30 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM10-13.jpg" alt="chicken" />
+                <h4>9 STRIPS</h4>
+                <p>
+                  Our hot chicken wings in crispy coating with spices — the true
+                  fire! * Wings could be with one or two bones.
+                </p>
+                <button>9,80 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM11SON.jpg" alt="chicken" />
+                <h4>6 STRIPS</h4>
+                <p>
+                  Extremely soft chicken fillet hand-breaded and cooked in the
+                  restaurant according to Colonel Sanders’ unique recipe.
+                  Perfect taste!
+                </p>
+                <button>7,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM11SON.jpg" alt="chicken" />
+                <h4>3 STRIPS</h4>
+                <p>
+                  Extremely soft chicken fillet hand-breaded and cooked in the
+                  restaurant according to Colonel Sanders’ unique recipe.
+                  Perfect taste!
+                </p>
+                <button>4,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM10-13.jpg" alt="chicken" />
+                <h4>9 SPICY STRIPS</h4>
+                <p>
+                  Extremely soft chicken fillet hand-breaded and cooked in the
+                  restaurant according to Colonel Sanders’ unique recipe.
+                  Perfect taste!
+                </p>
+                <button>9,80 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM11SON.jpg" alt="chicken" />
+                <h4>6 SPICY STRIPS</h4>
+                <p>
+                  Extremely soft chicken fillet hand-breaded and cooked in the
+                  restaurant according to Colonel Sanders’ unique recipe.
+                  Perfect taste!
+                </p>
+                <button>7,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/DRUM11SON.jpg" alt="chicken" />
+                <h4>3 SPICY STRIPS</h4>
+                <p>
+                  Extremely soft chicken fillet hand-breaded and cooked in the
+                  restaurant according to Colonel Sanders’ unique recipe.
+                  Perfect taste!
+                </p>
+                <button>4,20 ₼</button>
+              </div>
             </div>
-            <div id="JuicyChicken" class="yemek">
-                <h5>Juicy Chicken</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="img/DRUM1-4.jpg" alt="chicken">
-                        <h4>1 DRUMSTICKS</h4>
-                        <p>KFC Chicken Drumsticks in original recipe! fresh chicken hand-breaded and cooked according to
-                            Colonel Sanders’ secret recipe of “11 herbs and spices”.</p>
-                        <button> 3,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM2-5.jpg" alt="chicken">
-                        <h4>2 DRUMSTICKS</h4>
-                        <p>KFC Chicken Drumsticks in original recipe! fresh chicken hand-breaded and cooked according to
-                            Colonel Sanders’ secret recipe of “11 herbs and spices”.</p>
-                        <button> 5,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM3-6.jpg" alt="chicken">
-                        <h4>3 DRUMSTICKS</h4>
-                        <p>KFC Chicken Drumsticks in original recipe! fresh chicken hand-breaded and cooked according to
-                            Colonel Sanders’ secret recipe of “11 herbs and spices”.</p>
-                        <button> 7,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM1-4.jpg" alt="chicken">
-                        <h4>1 DRUMSTICKS SPICY</h4>
-                        <p>KFC Chicken Drumsticks in original recipe! fresh chicken hand-breaded and cooked according to
-                            Colonel Sanders’ secret recipe of “11 herbs and spices”.</p>
-                        <button> 3,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM2-5.jpg" alt="chicken">
-                        <h4>2 DRUMSTICKS SPICY</h4>
-                        <p>KFC Chicken Drumsticks in original recipe! fresh chicken hand-breaded and cooked according to
-                            Colonel Sanders’ secret recipe of “11 herbs and spices”.</p>
-                        <button> 5,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM3-6.jpg" alt="chicken">
-                        <h4>3 DRUMSTICKS SPICY</h4>
-                        <p>KFC Chicken Drumsticks in original recipe! fresh chicken hand-breaded and cooked according to
-                            Colonel Sanders’ secret recipe of “11 herbs and spices”.</p>
-                        <button> 7,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM7-8.jpg" alt="chicken">
-                        <h4>3 SPICY WINGS</h4>
-                        <p>KFC Chicken Drumsticks in original recipe! fresh chicken hand-breaded and cooked according to
-                            Colonel Sanders’ secret recipe of “11 herbs and spices”.</p>
-                        <button> 3,80 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM7-8.jpg" alt="chicken">
-                        <h4>6 SPICY WINGS</h4>
-                        <p>Our hot chicken wings in crispy coating with spices — the true fire! * Wings could be with
-                            one or two bones.</p>
-                        <button> 6,80 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM9.jpg" alt="chicken">
-                        <h4>9 SPICY WINGS</h4>
-                        <p>Our hot chicken wings in crispy coating with spices — the true fire! * Wings could be with
-                            one or two bones.</p>
-                        <button> 9,30 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM10-13.jpg" alt="chicken">
-                        <h4>9 STRIPS</h4>
-                        <p>Our hot chicken wings in crispy coating with spices — the true fire! * Wings could be with
-                            one or two bones.</p>
-                        <button> 9,80 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM11SON.jpg" alt="chicken">
-                        <h4>6 STRIPS</h4>
-                        <p>Extremely soft chicken fillet hand-breaded and cooked in the restaurant according to Colonel
-                            Sanders’ unique recipe. Perfect taste!</p>
-                        <button> 7,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM11SON.jpg" alt="chicken">
-                        <h4>3 STRIPS</h4>
-                        <p>Extremely soft chicken fillet hand-breaded and cooked in the restaurant according to Colonel
-                            Sanders’ unique recipe. Perfect taste!</p>
-                        <button> 4,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM10-13.jpg" alt="chicken">
-                        <h4>9 SPICY STRIPS</h4>
-                        <p>Extremely soft chicken fillet hand-breaded and cooked in the restaurant according to Colonel
-                            Sanders’ unique recipe. Perfect taste!</p>
-                        <button> 9,80 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM11SON.jpg" alt="chicken">
-                        <h4>6 SPICY STRIPS</h4>
-                        <p>Extremely soft chicken fillet hand-breaded and cooked in the restaurant according to Colonel
-                            Sanders’ unique recipe. Perfect taste!</p>
-                        <button> 7,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/DRUM11SON.jpg" alt="chicken">
-                        <h4>3 SPICY STRIPS</h4>
-                        <p>Extremely soft chicken fillet hand-breaded and cooked in the restaurant according to Colonel
-                            Sanders’ unique recipe. Perfect taste!</p>
-                        <button> 4,20 ₼</button>
-                    </div>
-                </div>
+          </div>
+          <div id="Box-Combo" class="yemek">
+            <h5>Box & Combo</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="img/combo1.jpg" alt="combo" />
+                <h4>BOXMASTER COMBO ORIGINAL</h4>
+                <p>Boxmaster OR, medium fries, Coca-Cola 0.5</p>
+                <button>10,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/combo2-3.png" alt="combo" />
+                <h4>BOXMASTER COMBO</h4>
+                <p>Boxmaster, medium fries, medium soft drink</p>
+                <button>10,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/combo2-3.png" alt="combo" />
+                <h4>SANDERS COMBO</h4>
+                <p>Sanders burger, medium fries, medium soft drink</p>
+                <button>10,30 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/combo4-5.jpg" alt="combo" />
+                <h4>CHEFBURGER COMBO ORIGINAL</h4>
+                <p>Chefburger OR, medium fries, Coca-Cola/Fanta/Sprite 0.5</p>
+                <button>8,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/combo4-5.jpg" alt="combo" />
+                <h4>CHEFBURGER COMBO SPICY</h4>
+                <p>Chefburger HS, medium fries, Coca-Cola/Fanta/Sprite 0.5</p>
+                <button>8,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/combo6.jpg" alt="combo" />
+                <h4></h4>
+                <p>Twister, medium french fries, Coca-Cola/Fanta/Sprite 0.5</p>
+                <button>9,20 ₼</button>
+              </div>
             </div>
-            <div id="Box-Combo" class="yemek">
-                <h5>Box & Combo</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="img/combo1.jpg" alt="combo">
-                        <h4>BOXMASTER COMBO ORIGINAL</h4>
-                        <p>Boxmaster OR, medium fries, Coca-Cola 0.5</p>
-                        <button> 10,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/combo2-3.png" alt="combo">
-                        <h4>BOXMASTER COMBO</h4>
-                        <p>Boxmaster, medium fries, medium soft drink</p>
-                        <button> 10,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/combo2-3.png" alt="combo">
-                        <h4>SANDERS COMBO</h4>
-                        <p>Sanders burger, medium fries, medium soft drink</p>
-                        <button> 10,30 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/combo4-5.jpg" alt="combo">
-                        <h4>CHEFBURGER COMBO ORIGINAL</h4>
-                        <p>Chefburger OR, medium fries, Coca-Cola/Fanta/Sprite 0.5</p>
-                        <button> 8,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/combo4-5.jpg" alt="combo">
-                        <h4>CHEFBURGER COMBO SPICY</h4>
-                        <p>Chefburger HS, medium fries, Coca-Cola/Fanta/Sprite 0.5</p>
-                        <button> 8,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/combo6.jpg" alt="combo">
-                        <h4></h4>
-                        <p>Twister, medium french fries, Coca-Cola/Fanta/Sprite 0.5</p>
-                        <button> 9,20 ₼</button>
-                    </div>
-                </div>
+          </div>
+          <div id="FrenchFries-Snacks" class="yemek">
+            <h5>French Fries & Snacks</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="img/FRIE1.jpg" alt="snack" />
+                <h4>FRIES S</h4>
+                <p>
+                  Our big chunks have kept even more of the way your favorite
+                  French fries taste. It is crumby inside and have tasty crispy
+                  crust.
+                </p>
+                <button>2,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/FRIE2.jpg" alt="snack" />
+                <h4>FRIES M</h4>
+                <p>
+                  Our big chunks have kept even more of the way your favorite
+                  French fries taste. It is crumby inside and have tasty crispy
+                  crust.
+                </p>
+                <button>3,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/FRIE3.jpg" alt="snack" />
+                <h4>BASKET FRIES</h4>
+                <p>
+                  Our big chunks have kept even more of the way your favorite
+                  French fries taste. It is crumby inside and have tasty crispy
+                  crust.
+                </p>
+                <button>4,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/FRIE4.jpg" alt="snack" />
+                <h4>WEDGES S</h4>
+                <p>This so crispy, tasty and beloved flavor is now in KFC!</p>
+                <button>3,50 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/FRIE5.jpg" alt="snack" />
+                <h4>WEDGES M</h4>
+                <p>This so crispy, tasty and beloved flavor is now in KFC!</p>
+                <button>4,50 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/FRIE6.jpg" alt="snack" />
+                <h4>CHEESE PILLOW 3</h4>
+                <p>
+                  Delicate cheese in a crispy breading! Ideal snack or
+                  supplement to your favorite dishes! More delicious with
+                  cranberry sauce
+                </p>
+                <button>2,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/FRIE7.jpg" alt="snack" />
+                <h4>CHEESE PILLOW 5</h4>
+                <p>
+                  Delicate cheese in a crispy breading! Ideal snack or
+                  supplement to your favorite dishes! More delicious with
+                  cranberry sauce
+                </p>
+                <button>3,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/FRIE8.jpg" alt="snack" />
+                <h4>CHEESE PILLOW 7</h4>
+                <p>
+                  Delicate cheese in a crispy breading! Ideal snack or
+                  supplement to your favorite dishes! More delicious with
+                  cranberry sauce
+                </p>
+                <button>5,90 ₼</button>
+              </div>
             </div>
-            <div id="FrenchFries-Snacks" class="yemek">
-                <h5>French Fries & Snacks</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="img/FRIE1.jpg" alt="snack">
-                        <h4>FRIES S</h4>
-                        <p>Our big chunks have kept even more of the way your favorite French fries taste. It is crumby
-                            inside and have tasty crispy crust.</p>
-                        <button> 2,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/FRIE2.jpg" alt="snack">
-                        <h4>FRIES M</h4>
-                        <p>Our big chunks have kept even more of the way your favorite French fries taste. It is crumby
-                            inside and have tasty crispy crust.</p>
-                        <button> 3,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/FRIE3.jpg" alt="snack">
-                        <h4>BASKET FRIES</h4>
-                        <p>Our big chunks have kept even more of the way your favorite French fries taste. It is crumby
-                            inside and have tasty crispy crust.</p>
-                        <button> 4,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/FRIE4.jpg" alt="snack">
-                        <h4>WEDGES S</h4>
-                        <p>This so crispy, tasty and beloved flavor is now in KFC!</p>
-                        <button> 3,50 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/FRIE5.jpg" alt="snack">
-                        <h4>WEDGES M</h4>
-                        <p>This so crispy, tasty and beloved flavor is now in KFC!</p>
-                        <button> 4,50 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/FRIE6.jpg" alt="snack">
-                        <h4>CHEESE PILLOW 3</h4>
-                        <p>Delicate cheese in a crispy breading! Ideal snack or supplement to your favorite dishes! More
-                            delicious with cranberry sauce</p>
-                        <button> 2,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/FRIE7.jpg" alt="snack">
-                        <h4>CHEESE PILLOW 5</h4>
-                        <p>Delicate cheese in a crispy breading! Ideal snack or supplement to your favorite dishes! More
-                            delicious with cranberry sauce</p>
-                        <button> 3,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/FRIE8.jpg" alt="snack">
-                        <h4>CHEESE PILLOW 7</h4>
-                        <p>Delicate cheese in a crispy breading! Ideal snack or supplement to your favorite dishes! More
-                            delicious with cranberry sauce</p>
-                        <button> 5,90 ₼</button>
-                    </div>
-                </div>
+          </div>
+          <div id="Sauces" class="yemek">
+            <h5>Sauces</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="img/sauce1.jpg" alt="sauce" />
+                <h4>TOMATO KETCHUP</h4>
+                <p>Tomato Ketchup</p>
+                <button>0,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/sauce2.jpg" alt="sauce" />
+                <h4>BBQ SAUCE</h4>
+                <p>BBQ Sauce</p>
+                <button>0,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/sauce3.jpg" alt="sauce" />
+                <h4>GARLIC SAUCE</h4>
+                <p>Garlic Sauce</p>
+                <button>0,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/sauce4.jpg" alt="sauce" />
+                <h4>CHEESE SAUCE</h4>
+                <p>Cheese Sauce</p>
+                <button>0,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/sauce5.jpg" alt="sauce" />
+                <h4>SWEET N' SOUR SAUCE</h4>
+                <p>Sweet N' Sour Sauce</p>
+                <button>0,70 ₼</button>
+              </div>
             </div>
-            <div id="Sauces" class="yemek">
-                <h5>Sauces</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="img/sauce1.jpg" alt="sauce">
-                        <h4>TOMATO KETCHUP</h4>
-                        <p>Tomato Ketchup</p>
-                        <button> 0,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/sauce2.jpg" alt="sauce">
-                        <h4>BBQ SAUCE</h4>
-                        <p>BBQ Sauce</p>
-                        <button> 0,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/sauce3.jpg" alt="sauce">
-                        <h4>GARLIC SAUCE</h4>
-                        <p>Garlic Sauce</p>
-                        <button> 0,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/sauce4.jpg" alt="sauce">
-                        <h4>CHEESE SAUCE</h4>
-                        <p>Cheese Sauce</p>
-                        <button> 0,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/sauce5.jpg" alt="sauce">
-                        <h4>SWEET N' SOUR SAUCE</h4>
-                        <p>Sweet N' Sour Sauce</p>
-                        <button> 0,70 ₼</button>
-                    </div>
-                </div>
+          </div>
+          <div id="Colddrinks" class="yemek">
+            <h5>Cold drinks</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="img/coca.png" alt="drink" />
+                <h4>COCA-COLA 0.3 L</h4>
+                <p>Coca-Cola 0.3 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cocazero.png" alt="drink" />
+                <h4>COCA-COLA ZERO 0.3 L</h4>
+                <p>Coca-Cola Zero 0.3 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/fanta.jpg" alt="drink" />
+                <h4>FANTA 0.3 L</h4>
+                <p>Fanta 0.3 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/sprite.png" alt="drink" />
+                <h4>SPRITE 0.3 L</h4>
+                <p>Sprite 0.3 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/coca.png" alt="drink" />
+                <h4>COCA-COLA 0.5 L</h4>
+                <p>Coca-Cola 0.5 L</p>
+                <button>2,60 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cocazero.png" alt="drink" />
+                <h4>COCA-COLA ZERO 0.5 L</h4>
+                <p>Coca-Cola Zero 0.5 L</p>
+                <button>2,60 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/fanta.jpg" alt="drink" />
+                <h4>FANTA 0.5 L</h4>
+                <p>Fanta 0.5 L</p>
+                <button>2,60 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/sprite.png" alt="drink" />
+                <h4>SPRITE 0.5 L</h4>
+                <p>Sprite 0.5 L</p>
+                <button>2,60 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/coca.png" alt="drink" />
+                <h4>COCA-COLA 0.8 L</h4>
+                <p>Coca-Cola 0.8 L</p>
+                <button>3,10 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cocazero.png" alt="drink" />
+                <h4>COCA-COLA ZERO 0.8 L</h4>
+                <p>Coca-Cola Zero 0.8 L</p>
+                <button>3,10 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/fanta.jpg" alt="drink" />
+                <h4>FANTA 0.8 L</h4>
+                <p>Fanta 0.8 L</p>
+                <button>3,10 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/sprite.png" alt="drink" />
+                <h4>SPRITE 0.8 L</h4>
+                <p>Sprite 0.8 L</p>
+                <button>3,10 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tundsu.png" alt="drink" />
+                <h4>SPARKLING WATER 0.5 L</h4>
+                <p>Sparkling Water 0.5 L</p>
+                <button>1,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/su.png" alt="drink" />
+                <h4>WATER 0.5 L</h4>
+                <p>Water 0.5 L</p>
+                <button>1,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cold7.jpg" alt="drink" />
+                <h4>CAPRY SUN CHERRY 0.2 L</h4>
+                <p>Capry Sun Cherry 0.2 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cold8.jpg" alt="drink" />
+                <h4>CAPRY SUN MULTIVITAMIN 0.2 L</h4>
+                <p>Capry Sun Multivitamin 0.2 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cappy1'.jpg" alt="drink" />
+                <h4>CAPPY ORANGE 0.2 L</h4>
+                <p>Cappy Orange 0.2 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cappy2.jpg" alt="drink" />
+                <h4>CAPPY CHERRY 0.2 L</h4>
+                <p>Cappy Cherry 0.2 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cappy3.jpg" alt="drink" />
+                <h4>CAPPY APPLE 0.2 L</h4>
+                <p>Cappy Apple 0.2 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cappy4.jpg" alt="drink" />
+                <h4>CAPPY MULTIVITAMIN 0.2 L</h4>
+                <p>Cappy Multivitamin 0.2 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/cappy5.jpg" alt="drink" />
+                <h4>CAPPY PEACH 0.2 L</h4>
+                <p>Cappy Peach 0.2 L</p>
+                <button>1,70 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/fuse1.jpg" alt="drink" />
+                <h4>FUSE TEA MANGO-PINEAPPLE</h4>
+                <p>Fuse Tea Mango-Pineapple</p>
+                <button>2,50 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/fuse2.jpg" alt="drink" />
+                <h4>FUSE TEA LEMON</h4>
+                <p>Fuse Tea Lemon</p>
+                <button>2,50 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/fuse3.jpg" alt="drink" />
+                <h4>FUSE TEA PEACH</h4>
+                <p>Fuse Tea Peach</p>
+                <button>2,50 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/coldson.jpg " alt="drink" />
+                <h4>CARAMEL ICED COFFEE</h4>
+                <p>Caramel Iced Coffee</p>
+                <button>2,60 ₼</button>
+              </div>
             </div>
-            <div id="Colddrinks" class="yemek">
-                <h5>Cold drinks</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="img/coca.png" alt="drink">
-                        <h4>COCA-COLA 0.3 L</h4>
-                        <p>Coca-Cola 0.3 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cocazero.png" alt="drink">
-                        <h4>COCA-COLA ZERO 0.3 L</h4>
-                        <p>Coca-Cola Zero 0.3 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/fanta.jpg" alt="drink">
-                        <h4>FANTA 0.3 L</h4>
-                        <p>Fanta 0.3 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/sprite.png" alt="drink">
-                        <h4>SPRITE 0.3 L</h4>
-                        <p>Sprite 0.3 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/coca.png" alt="drink">
-                        <h4>COCA-COLA 0.5 L</h4>
-                        <p>Coca-Cola 0.5 L</p>
-                        <button> 2,60 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cocazero.png" alt="drink">
-                        <h4>COCA-COLA ZERO 0.5 L</h4>
-                        <p>Coca-Cola Zero 0.5 L</p>
-                        <button> 2,60 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/fanta.jpg" alt="drink">
-                        <h4>FANTA 0.5 L</h4>
-                        <p>Fanta 0.5 L</p>
-                        <button> 2,60 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/sprite.png" alt="drink">
-                        <h4>SPRITE 0.5 L</h4>
-                        <p>Sprite 0.5 L</p>
-                        <button> 2,60 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/coca.png" alt="drink">
-                        <h4>COCA-COLA 0.8 L</h4>
-                        <p>Coca-Cola 0.8 L</p>
-                        <button> 3,10 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cocazero.png" alt="drink">
-                        <h4>COCA-COLA ZERO 0.8 L</h4>
-                        <p>Coca-Cola Zero 0.8 L</p>
-                        <button> 3,10 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/fanta.jpg" alt="drink">
-                        <h4>FANTA 0.8 L</h4>
-                        <p>Fanta 0.8 L</p>
-                        <button> 3,10 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/sprite.png" alt="drink">
-                        <h4>SPRITE 0.8 L</h4>
-                        <p>Sprite 0.8 L</p>
-                        <button> 3,10 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tundsu.png" alt="drink">
-                        <h4>SPARKLING WATER 0.5 L</h4>
-                        <p>Sparkling Water 0.5 L</p>
-                        <button> 1,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/su.png" alt="drink">
-                        <h4>WATER 0.5 L</h4>
-                        <p>Water 0.5 L</p>
-                        <button> 1,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cold7.jpg" alt="drink">
-                        <h4>CAPRY SUN CHERRY 0.2 L</h4>
-                        <p>Capry Sun Cherry 0.2 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cold8.jpg" alt="drink">
-                        <h4>CAPRY SUN MULTIVITAMIN 0.2 L</h4>
-                        <p>Capry Sun Multivitamin 0.2 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cappy1'.jpg" alt="drink">
-                        <h4>CAPPY ORANGE 0.2 L</h4>
-                        <p>Cappy Orange 0.2 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cappy2.jpg" alt="drink">
-                        <h4>CAPPY CHERRY 0.2 L</h4>
-                        <p>Cappy Cherry 0.2 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cappy3.jpg" alt="drink">
-                        <h4>CAPPY APPLE 0.2 L</h4>
-                        <p>Cappy Apple 0.2 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cappy4.jpg" alt="drink">
-                        <h4>CAPPY MULTIVITAMIN 0.2 L</h4>
-                        <p>Cappy Multivitamin 0.2 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/cappy5.jpg" alt="drink">
-                        <h4>CAPPY PEACH 0.2 L</h4>
-                        <p>Cappy Peach 0.2 L</p>
-                        <button> 1,70 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/fuse1.jpg" alt="drink">
-                        <h4>FUSE TEA MANGO-PINEAPPLE</h4>
-                        <p>Fuse Tea Mango-Pineapple</p>
-                        <button> 2,50 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/fuse2.jpg" alt="drink">
-                        <h4>FUSE TEA LEMON</h4>
-                        <p>Fuse Tea Lemon</p>
-                        <button> 2,50 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/fuse3.jpg" alt="drink">
-                        <h4>FUSE TEA PEACH</h4>
-                        <p>Fuse Tea Peach</p>
-                        <button> 2,50 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/coldson.jpg " alt="drink">
-                        <h4>CARAMEL ICED COFFEE</h4>
-                        <p>Caramel Iced Coffee</p>
-                        <button> 2,60 ₼</button>
-                    </div>
-                </div>
+          </div>
+          <div id="HotDrinks" class="yemek">
+            <h5>Hot Drinks</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="img/tea1.jpg" alt="drink" />
+                <h4>BLACK TEA 0.2 L</h4>
+                <p>Black Tea 0.2 L</p>
+                <button>1,40 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea1.jpg" alt="drink" />
+                <h4>BLACK TEA 0.3 L</h4>
+                <p>Black Tea 0.3 L</p>
+                <button>1,50 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea1.jpg" alt="drink" />
+                <h4>BLACK TEA 0.4 L</h4>
+                <p>Black Tea 0.4 L</p>
+                <button>1,60 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea2.jpg" alt="drink" />
+                <h4>GREEN TEA 0.2 L</h4>
+                <p>Green Tea 0.2 L</p>
+                <button>1,40 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea2.jpg" alt="drink" />
+                <h4>GREEN TEA 0.3 L</h4>
+                <p>Green Tea 0.3 L</p>
+                <button>1,50 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea2.jpg" alt="drink" />
+                <h4>GREEN TEA 0.4 L</h4>
+                <p>Green Tea 0.4 L</p>
+                <button>1,60 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea3.jpg" alt="drink" />
+                <h4>ESPRESSO</h4>
+                <p>Espresso</p>
+                <button>2,40 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea4.jpg" alt="drink" />
+                <h4>AMERICANO 0,2</h4>
+                <p>Americano 0,2 L</p>
+                <button>2,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea5-6.jpg" alt="drink" />
+                <h4>CAPPUCCINO 0,2</h4>
+                <p>Cappuccino 0,2 L</p>
+                <button>3,20 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea5-6.jpg" alt="drink" />
+                <h4>CAPPUCCINO 0,3</h4>
+                <p>Cappuccino 0,3 L</p>
+                <button>3,90 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea7-8.jpg" alt="drink" />
+                <h4>LATTE 0,2</h4>
+                <p>Latte 0,2 L</p>
+                <button>3,00 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea7-8.jpg" alt="drink" />
+                <h4>LATTE 0,3</h4>
+                <p>Latte 0,3 L</p>
+                <button>3,80 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea7-8.jpg" alt="drink" />
+                <h4>LATTE 0,4</h4>
+                <p>Latte 0,4 L</p>
+                <button>4,00 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/tea7-8.jpg" alt="drink" />
+                <h4>CAPPUCCINO 0,4</h4>
+                <p>Cappuccino 0,4 L</p>
+                <button>4,10 ₼</button>
+              </div>
             </div>
-            <div id="HotDrinks" class="yemek">
-                <h5>Hot Drinks</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="img/tea1.jpg" alt="drink">
-                        <h4>BLACK TEA 0.2 L</h4>
-                        <p>Black Tea 0.2 L</p>
-                        <button> 1,40 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea1.jpg" alt="drink">
-                        <h4>BLACK TEA 0.3 L</h4>
-                        <p>Black Tea 0.3 L</p>
-                        <button> 1,50 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea1.jpg" alt="drink">
-                        <h4>BLACK TEA 0.4 L</h4>
-                        <p>Black Tea 0.4 L</p>
-                        <button> 1,60 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea2.jpg" alt="drink">
-                        <h4>GREEN TEA 0.2 L</h4>
-                        <p>Green Tea 0.2 L</p>
-                        <button> 1,40 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea2.jpg" alt="drink">
-                        <h4>GREEN TEA 0.3 L</h4>
-                        <p>Green Tea 0.3 L</p>
-                        <button> 1,50 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea2.jpg" alt="drink">
-                        <h4>GREEN TEA 0.4 L</h4>
-                        <p>Green Tea 0.4 L</p>
-                        <button> 1,60 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea3.jpg" alt="drink">
-                        <h4>ESPRESSO</h4>
-                        <p>Espresso</p>
-                        <button> 2,40 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea4.jpg" alt="drink">
-                        <h4>AMERICANO 0,2</h4>
-                        <p>Americano 0,2 L</p>
-                        <button> 2,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea5-6.jpg" alt="drink">
-                        <h4>CAPPUCCINO 0,2</h4>
-                        <p>Cappuccino 0,2 L</p>
-                        <button> 3,20 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea5-6.jpg" alt="drink">
-                        <h4>CAPPUCCINO 0,3</h4>
-                        <p>Cappuccino 0,3 L</p>
-                        <button> 3,90 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea7-8.jpg" alt="drink">
-                        <h4>LATTE 0,2</h4>
-                        <p>Latte 0,2 L</p>
-                        <button> 3,00 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea7-8.jpg" alt="drink">
-                        <h4>LATTE 0,3</h4>
-                        <p>Latte 0,3 L</p>
-                        <button> 3,80 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea7-8.jpg" alt="drink">
-                        <h4>LATTE 0,4</h4>
-                        <p>Latte 0,4 L</p>
-                        <button> 4,00 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/tea7-8.jpg" alt="drink">
-                        <h4>CAPPUCCINO 0,4</h4>
-                        <p>Cappuccino 0,4 L</p>
-                        <button> 4,10 ₼</button>
-                    </div>
-                </div>
+          </div>
+          <div id="Desserts" class="yemek">
+            <h5>Desserts</h5>
+            <div class="yemeks">
+              <div class="card">
+                <img src="img/desert1.jpg" alt="dessert" />
+                <h4>CHOCOLATE MUFFIN</h4>
+                <p>Chocolate Muffin</p>
+                <button>3,60 ₼</button>
+              </div>
+              <div class="card">
+                <img src="img/desert2.jpg" alt="dessert" />
+                <h4>BLUEBERRY MUFFIN</h4>
+                <p>Blueberry Muffin</p>
+                <button>3,60 ₼</button>
+              </div>
             </div>
-            <div id="Desserts" class="yemek">
-                <h5>Desserts</h5>
-                <div class="yemeks">
-                    <div class="card">
-                        <img src="img/desert1.jpg" alt="dessert">
-                        <h4>CHOCOLATE MUFFIN</h4>
-                        <p>Chocolate Muffin</p>
-                        <button> 3,60 ₼</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/desert2.jpg" alt="dessert">
-                        <h4>BLUEBERRY MUFFIN</h4>
-                        <p>Blueberry Muffin</p>
-                        <button> 3,60 ₼</button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <hr>
+
+    <hr />
     <div class="foot">
-        <div class="left">
-            <ul class="tels">
-                <li><a class="logo" href="kfc.az.html"><img src="https://devkfcwebsites.fimble.io/admin/files/4109.svg"
-                            alt="image" width="90px"></a></li>
-                <li class="telefon"><a href="/tel:888"><i class="fa-solid fa-phone"></i>*8888</a></li>
+      <div class="left">
+        <ul class="tels">
+          <li>
+            <a class="logo" href="kfc.az.html"
+              ><img
+                src="https://devkfcwebsites.fimble.io/admin/files/4109.svg"
+                alt="image"
+                width="90px"
+            /></a>
+          </li>
+          <li class="telefon">
+            <a href="/tel:888"><i class="fa-solid fa-phone"></i>*8888</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="metn">
+          <h5>Information</h5>
+
+          <div class="information_list">
+            <ul>
+              <li><a href="history.html">History</a></li>
+              <li><a href="discover.html">The 11 Ingredients!</a></li>
+              <li><a href="stores.html">Stores</a></li>
             </ul>
+          </div>
         </div>
-        <div class="right">
-            <div class="metn">
-                <h5>Information</h5>
-                <ul>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="discover.html">The 11 Ingredients!</a></li>
-                    <li><a href="stores.html">Stores</a></li>
-                </ul>
-            </div>
-            <div class="metn">
-                <h5>Need Help?</h5>
-                <ul>
-                    <li><a href="contactus.html">Contact US</a></li>
-                    <li><a href="career.html">Career in KFC</a></li>
-                </ul>
-            </div>
-            <div class="metn">
-                <h5>Follow us</h5>
-                <a class="logos"
-                    href="https://www.bing.com/ck/a?!&&p=cbe6fe174c7876ddf6ce9d2f7056afcb7286d8d0ad3dd6d35a13b91ba74bb921JmltdHM9MTczOTQ5MTIwMA&ptn=3&ver=2&hsh=4&fclid=2594dfb4-c36a-6662-052a-cc1ec2b767d9&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"
-                    target="_blank">
-                    <img src="./img/faceb.svg" alt="facebook">
-                </a>
-                <a class="logos"
-                    href="https://www.bing.com/ck/a?!&&p=6ecc7b891c969a895786073b1c19efce2a145a00a28602bd82a90abc84a7d264JmltdHM9MTczOTQ5MTIwMA&ptn=3&ver=2&hsh=4&fclid=2594dfb4-c36a-6662-052a-cc1ec2b767d9&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"
-                    target="_blank">
-                    <img src="./img/instag.svg" alt="instagram">
-                </a>
-            </div>
+        <div class="metn">
+          <h5>Need Help?</h5>
+          <ul>
+            <li><a href="contactus.html">Contact US</a></li>
+            <li><a href="career.html">Career in KFC</a></li>
+          </ul>
         </div>
+        <div class="metn">
+          <h5>Follow us</h5>
+          <a
+            class="logos"
+            href="https://www.bing.com/ck/a?!&&p=cbe6fe174c7876ddf6ce9d2f7056afcb7286d8d0ad3dd6d35a13b91ba74bb921JmltdHM9MTczOTQ5MTIwMA&ptn=3&ver=2&hsh=4&fclid=2594dfb4-c36a-6662-052a-cc1ec2b767d9&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1"
+            target="_blank"
+          >
+            <img src="./img/faceb.svg" alt="facebook" />
+          </a>
+          <a
+            class="logos"
+            href="https://www.bing.com/ck/a?!&&p=6ecc7b891c969a895786073b1c19efce2a145a00a28602bd82a90abc84a7d264JmltdHM9MTczOTQ5MTIwMA&ptn=3&ver=2&hsh=4&fclid=2594dfb4-c36a-6662-052a-cc1ec2b767d9&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1"
+            target="_blank"
+          >
+            <img src="./img/instag.svg" alt="instagram" />
+          </a>
+        </div>
+      </div>
+      <div class="hidden"></div>
     </div>
     <footer>
-        <div class="footer_text">
-            <div class="policy_text">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="term.html">Terms & Conditions</a>
-            </div>
-            <div class="copyright_text">
-                <p>© Copyright 2025 KFC AZ All Rights Reserved.</p>
-            </div>
-            <div class="fimble_btn">
-                <a href="https://www.fimble.io/" target="_blank"> Powered by fimble</a>
-            </div>
+      <div class="footer_text">
+        <div class="policy_text">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="term.html">Terms & Conditions</a>
         </div>
+        <div class="copyright_text">
+          <p>© Copyright 2025 KFC AZ All Rights Reserved.</p>
+        </div>
+        <div class="fimble_btn">
+          <a href="https://www.fimble.io/" target="_blank">
+            Powered by fimble</a
+          >
+        </div>
+      </div>
 
-        <div class="footer_logo">
-            <img src="img/kublar.png" alt="kublar">
-        </div>
+      <div class="footer_logo">
+        <img src="img/kublar.png" alt="kublar" />
+      </div>
     </footer>
 
-
     <script>
-        const sideBurger = document.querySelector("#side-burgers")
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("top-navbar");
+        const logo = document.getElementById("logo");
 
-        const burgersSec = document.querySelector("#burgers").offsetTop
-        const wraps = document.querySelector("#wraps").offsetTop
+        if (window.scrollY > 50) {
+          logo.style.width = "40px"; // Shrinks the logo
+          navbar.style.backgroundColor = "#fff"; // Changes the background color to dark
+          navbar.style.boxShadow = "0px 2px 5px rgba(0, 0, 0, 0.2)"; // Adds a shadow to the navbar to make it more noticeable
+        } else {
+          logo.style.width = "60px"; // Restores original size
+        }
+      });
+      window.addEventListener("DOMContentLoaded", () => {
+        const section = document.querySelectorAll(".yemek");
+        const navbar = document.getElementById("top-navbar");
+        const logo = document.getElementById("logo");
 
-        const buckets = document.querySelector("#buckets").offsetTop
-        const JuicyChicken = document.querySelector("#JuicyChicken").offsetTop
-        const BoxCombo = document.querySelector("#Box-Combo").offsetTop
-        const frenchFries = document.querySelector("#FrenchFries-Snacks").offsetTop
-        const Sauces = document.querySelector("#Sauces").offsetTop
-        const Colddrinks = document.querySelector("#Colddrinks").offsetTop
-        const Desserts = document.querySelector("#Desserts").offsetTop
-
-        window.addEventListener("scroll", function () {
-            var sidebarItems = document.querySelectorAll(".sidebar a");
-            var scrollPosition = window.scrollY;
-            if (scrollY === burgersSec) {
-                sideBurger.classList.add("isactive")
-            }
-            sidebarItems.forEach(function (item) {
-                var offset = item.offsetTop; // Elementin səhifədəki başlanğıc nöqtəsi
-                var height = item.offsetHeight;
-
-                if (scrollPosition >= offset && scrollPosition < offset + height) {
-                    item.classList.add("active"); // Scroll mövqeyi uyğun gəldikdə "active" sinfini əlavə et
+        function updateMenu() {
+          const scrollPos = window.scrollY;
+          section.forEach((section) => {
+            const sectionTop = section.offsetTop - 400;
+            const sectionHeight = section.offsetHeight;
+            if (
+              scrollPos >= sectionTop &&
+              scrollPos < sectionTop + sectionHeight
+            ) {
+              const menuItems = document.querySelectorAll(".sidebar a");
+              menuItems.forEach((menuItem) => {
+                if (menuItem.getAttribute("href") === "#" + section.id) {
+                  menuItem.classList.add("isactive");
                 } else {
-                    item.classList.remove("active"); // Başqa cürse, "active" sinfini çıxar
+                  menuItem.classList.remove("isactive");
                 }
-            });
-
-        });
-
-
-
-
-
-
+              });
+            }
+          });
+          if (window.scrollY > 50) {
+            logo.style.width = "60px"; // Shrinks the logo
+            navbar.style.backgroundColor = "#fff"; // Changes the background color to dark
+            navbar.style.boxShadow = "0px 2px 5px rgba(0, 0, 0, 0.2)"; // Adds a shadow to the navbar to make it more noticeable
+          } else {
+            logo.style.width = "90px"; // Restores original size
+            navbar.style.boxShadow = "0px 2px 5px rgba(0, 0, 0, 0.2)"; // Adds a shadow to the navbar to make it more noticeable
+          }
+        }
+        window.addEventListener("scroll", updateMenu);
+      });
     </script>
-</body>
-
+  </body>
 </html>

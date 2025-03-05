@@ -1,12 +1,20 @@
 body {
   background-color: white;
 }
+#overlay {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
 
 .sidebar {
-  height: 100%;
-  width: 240px;
-  position: fixed;
-  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Makes it span full height */
+  overflow-y: auto; /* Allows scrolling if the content overflows */
+  background-color: #fff; /* Adjust as needed */
+  padding-top: 220px;
+  width: 20%;
 }
 
 .sidebar ul {
@@ -18,11 +26,8 @@ body {
 }
 
 #top-navbar {
-  background-color: white;
-
   transition: background-color 0.3s ease-out;
   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
-  padding-top: 1%;
 }
 
 .sidebar a {
@@ -31,13 +36,12 @@ body {
 }
 
 .yemeks {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .yemek {
-  width: 95%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
   padding: 20px;
@@ -45,7 +49,7 @@ body {
 }
 
 .yemek img {
-  width: 250px;
+  width: 100%;
   height: 30vh;
   object-fit: contain;
   justify-content: center;
@@ -70,11 +74,9 @@ body {
   color: #403e3e;
   line-height: 1.3;
   margin: auto;
-
 }
 
 .side-right .card {
-  width: 260px;
   border: 1px solid rgba(223, 218, 218, 0.547);
   box-shadow: none;
   margin-top: 30px;
@@ -82,26 +84,25 @@ body {
 }
 
 .side-right {
-  margin-left: 330px;
   margin-top: 150px;
+  flex: 1;
+  max-width: fit-content;
 }
 
 .yemek {
   margin-bottom: 20px;
 }
-.isactive{
+.isactive {
   color: #e4002b !important;
 }
 
 @media only screen and (max-width: 1200px) {
   .sidebar {
     display: none;
-
   }
 
   .side-right {
-    margin-left: 0;
-
+    margin-inline: 20px;
   }
 
   .yemeks {
@@ -111,24 +112,21 @@ body {
 }
 
 @media only screen and (max-width: 1130px) {
-  .yemeks  {
-    
+  .yemeks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 860px) {
-  .yemeks  {
-    
+  .yemeks {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 590px) {
-  .yemeks  {
-    
+  .yemeks {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -137,22 +135,19 @@ body {
 }
 
 @media only screen and (max-width: 590px) {
-  .yemek  {
-    
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  .yemek {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 590px) {
   .nov {
-    
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
-
